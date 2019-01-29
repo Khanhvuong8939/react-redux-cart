@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
-import Products from './components/Products';
+import ProductsContainer from './containers/ProductsContainer';
 import Cart from './components/Cart';
 import Footer from './components/Footer';
 
@@ -11,7 +11,7 @@ class App extends Component {
                 <Header />
                 <main id="mainContainer">
                     <div className="container">
-                        <Products />
+                        <ProductsContainer />
                         <h3>
                             <span className="badge amber darken-2">Mua Hàng Thành Công !</span>
                         </h3>

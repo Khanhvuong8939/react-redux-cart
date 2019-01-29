@@ -41,13 +41,13 @@ class Product extends Component {
         );
 
     }
-    showRating = rating => {
+    showRating = (rating) => {
         var ratingStar = []
         for (let i = 0; i < rating; i++) {
-            ratingStar.push(<i className='fa fa-star'></i>)
+            ratingStar.push(<i key={i} className='fa fa-star' />)
         }
-        for (let i = 0; i < 5 - rating; i++) {
-            ratingStar.push(<i className='fa fa-star-o'></i>)
+        for (let j = 0; j < 5 - rating; j++) {
+            ratingStar.push(<i key={j + 5} className='fa fa-star-o' />)
         }
         return ratingStar;
     }
