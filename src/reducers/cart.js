@@ -12,6 +12,18 @@ const initialState = [
             price: 500
         },
         quantity: 3
+    }, 
+    {
+        product: {
+            id: 3,
+        name: 'Iphone X',
+        image: 'https://images-na.ssl-images-amazon.com/images/I/51XDRzsKL9L._SY550_.jpg',
+        rating: 4,
+        manufacturer: 'Apple',
+        inventory: 10,
+        price: 1000
+        },
+        quantity: 2
     }
 ]
 

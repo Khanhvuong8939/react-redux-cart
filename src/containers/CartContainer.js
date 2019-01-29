@@ -6,6 +6,7 @@ import * as msg from './../constants/Message';
 
 import Cart from './../components/Cart';
 import CartItem from './../components/CartItem';
+import CartResult from '../components/CartResult';
 
 export class CartContainer extends Component {
 
@@ -14,6 +15,7 @@ export class CartContainer extends Component {
         return (
             <Cart>
                 {this.showCartItem(cart)}
+                {this.showCartResult(cart)}
             </Cart>
         )
     }
@@ -29,6 +31,14 @@ export class CartContainer extends Component {
                     />
                 )
             })
+        }
+        return result;
+    }
+
+    showCartResult = cart => {
+        var result = null;
+        if (cart.length > 0) {
+            return <CartResult cart={cart} />
         }
         return result;
     }
