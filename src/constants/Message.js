@@ -1,0 +1,1 @@
+export const MSG_CART_EMPTY = 'CART HAVE NO ITEM'
