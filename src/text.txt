@@ -1,0 +1,9 @@
+header
+    products
+        product
+        product
+    message
+    cart
+        cartItem
+        total
+footer
